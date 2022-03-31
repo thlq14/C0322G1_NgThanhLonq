@@ -1,0 +1,15 @@
+BT mô tả có đk cấu trúc
+BEGIN 
+    INPUT P = Point
+	IF P >= 75 
+	    DISPLAY A 
+	  ELSE IF P >= 60
+	       DISPLAY B 
+	ELSE
+	  IF P >= 45
+	    DISPLAY C
+	  ELSE IF P >= 35
+		   DISPLAY D 
+	  IF P < 35
+	    DISPLAY E
+END 
