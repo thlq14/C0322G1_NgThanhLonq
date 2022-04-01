@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Kí Học Viên</title>
+    <style>
+        .c03 {
+            color: blue;
+        }
+    </style>
+</head>
+<body bgcolor="#f0e68c">
+<form>
+    <table cellpadding="5" cellspacing="5">
+        <th colspan="2" bgcolor="#7fffd4" class="c03" >ĐĂNG KÝ HỌC VIÊN</th>
+          <tr>
+             <td class="c03">Họ Và Tên</td>
+              <td>
+                  <input type="text" name="username">
+              </td>
+          </tr>
+          <tr>
+              <td class="c03">Ngày Sinh</td>
+               <td>
+                   <input type="text" name="ngaysinh">
+               </td>
+          </tr>
+          <tr>
+              <td class="c03">Giới Tính</td>
+              <td>
+                 <input type="radio" name="gender" value="Nam"> Nam
+                  <input type="radio" name="gender" value="Nữ"> Nữ
+              </td>
+          </tr>
+          <tr>
+              <td class="c03">Địa Chỉ</td>
+              <td>
+                  <textarea row="15" cols="25"> </textarea>
+              </td>
+          </tr>
+          <tr>
+              <td class="c03">Lớp</td>
+               <td>
+                <select name="dropdown">
+                    <option value="--Chọn Lớp--" selected>--Chọn Lớp--</option>
+                    <option value="--Chọn Lớp--">C0322G1</option>
+                    <option value="--Chọn Lớp--">A0321G1</option>
+                    <option value="--Chọn Lớp--">B0456G1</option>
+                </select>
+          </tr>
+          <tr>
+              <td class="c03">Email</td>
+              <td>
+                 <input type="text" name="email">
+              </td>
+          </tr>
+          <tr>
+              <td class="c03">Điện Thoại</td>
+              <td>
+              <input type="number" name="Điện Thoại">
+              </td>
+          </tr>
+          <tr>
+              <td></td>
+              <td width="300px">
+               <input type="submit" name="Đăng Ký" value ="Đăng Ký">
+               <input type="reset" name="Nhập Lại" value="Nhập Lại">
+              </td>
+          </tr>
+    </table>
+</form>
+</body>
+</html>
