@@ -1,1 +1,1 @@
-# C0322G1_ntlonq_GITProject
+# C0322G1_Nguyen_Thanh_Lonq
