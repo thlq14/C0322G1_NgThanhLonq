@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arg1 = parseInt(prompt("Input Number1:"));
+    let arg2 = parseInt(prompt("Input Number2:"));
+    let arg3 = parseInt(prompt("Input Number3:"));
+        if (arg1 > arg2) {
+            if (arg2 > arg3) {
+                document.write(arg2);
+            } else if (arg2 < arg3) {
+                if (arg1 > arg3) {
+                    document.write(arg3);
+                }else if (arg1 < arg3) {
+                    document.write(arg1);
+                } else if (arg1 === arg3) {
+                    document.write(arg2);
+                } else {
+                    document.write(arg2 === arg3);
+                }
+            } else if (arg1 < arg2) {
+                if (arg2 < arg3) {
+                    document.write(arg2);
+                } else if (arg2 > arg3) {
+                    if (arg1 < arg3) {
+                        document.write(arg3);
+                } else if (arg1 > arg3) {
+                        document.write(arg1);
+                    } else if (arg1 === arg3) {
+                        document.write(arg1 === arg3);
+                    } else {
+                        document.write(arg1);
+                    }
+                }
+            } else {
+                if (arg2 > arg3) {
+                    document.write(arg3);
+                } else if (arg2 < arg3) {
+                    document.write(arg1 === arg2);
+                } else {
+                    document.write(-1);
+                }
+            }
+        }
+</script>
+</body>
+</html>
