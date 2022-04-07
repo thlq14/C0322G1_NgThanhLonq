@@ -8,14 +8,20 @@
             width: 50px;
             height: 50px;
         }
+         button {
+             color: blue;
+         }
+         table {
+             ;
+         }
     </style>
 </head>
 
 
 <body>
-<table border="5px" cellpadding="20">
+<table border="5px solid black" cellpadding="10">
     <tr>
-        <td colspan="4" style="text-align: right;height: 50px"><input type="text" id="result"/></td>
+        <td colspan="4" style="height: 50px"><input type="text" style="width: 260px; height: 50px; text-align: right"  id="result"></td>
     </tr>
     <tr>
         <td>
@@ -56,7 +62,7 @@
             <button type="button" onclick="cal('9')">9</button>
         </td>
         <td>
-            <button type="button" onclick="cal('x')">x</button>
+            <button type="button" onclick="cal('*')">x</button>
         </td>
     </tr>
     <tr>
@@ -76,21 +82,20 @@
 </table>
 <script>
     let stringValue = '';
-
     function cal(value) {
-        // alert(value)
         stringValue += value;
         document.getElementById("result").value = stringValue;
     }
 
     function ketqua() {
-         stringValue = document.getElementById("result").value;
-        document.getElementById("result").value = eval(stringValue);
-        stringValue = eval(stringValue);
+
+        document.getElementById("result").value = eval(document.getElementById("result").value);
+        stringValue = document.getElementById("result").value;
     }
 
     function remove(){
         document.getElementById("result").value = "";
+        stringValue = "";
     }
 
 </script>
