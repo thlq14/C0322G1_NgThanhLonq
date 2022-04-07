@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+    let sd = parseFloat(prompt("số kWh điện tiêu thụ"));
+    let st;
+     if (sd < 50) {
+         st = sd * 1.678;
+         document.write("Số tiền phải trả là " + st);
+     } else if (sd < 100) {
+         st = sd * 1.734;
+         document.write("Số tiền phải trả là " + st);
+     } else if (sd < 300) {
+         st = sd * 2.014;
+         document.write("Số tiền phải trả là " + st);
+     } else {
+         st = sd * 2.536;
+         document.write("Số tiền phải trả là " + st);
+     }
+</script>
+</body>
+</html>
