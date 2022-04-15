@@ -7,10 +7,10 @@
 <body>
 <script>
     // Hiển thị 20 số nguyên tố đầu tiên.
-    let n = 4;
+    let number = parseInt(prompt("Enter a Number: "));
+    let n = 2;
     let count = 0;
-    document.write(2 + "<br>" + 3 + "<br>");
-    while (count < 18) {
+    while (count < number) {
         let flag = true;
         for (let i = 2; i < n; i++) {
             if (n % i === 0) {

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình đếm số nguyên âm trong một chuỗi.
+    let nums = "dgtiiy-2-4gbjk680-7-ghj";
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === "-" && ! isNaN(nums[i+1])) {
+            count++;
+        }
+    }
+    document.write(count);
+</script>
+</body>
+</html>
