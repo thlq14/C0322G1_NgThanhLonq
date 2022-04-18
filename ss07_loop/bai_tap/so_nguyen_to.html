@@ -8,9 +8,11 @@
 <script>
     // Hiển thị 20 số nguyên tố đầu tiên.
     let number = parseInt(prompt("Enter a Number: "));
-    let n = 2;
+    let n = 4;
     let count = 0;
-    while (count < number) {
+    document.write(number + " số nguyên tố đầu tiên là: " + "<br>");
+    document.write(2 + "<br>" + 3 + "<br>");
+    while (count < number - 2) {
         let flag = true;
         for (let i = 2; i < n; i++) {
             if (n % i === 0) {
