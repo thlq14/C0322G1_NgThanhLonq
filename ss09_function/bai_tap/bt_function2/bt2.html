@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được.
+    let r = parseFloat(prompt("Nhập bán kính hình tròn: "));
+
+    function acrCircle() {
+        acreage = r * r * 3.14;
+        return acreage;
+    }
+
+    function perCircle() {
+        perimeter = 2 * r * 3.14;
+        return perimeter;
+    }
+
+    document.write("Diện tích hình tròn là: " + acrCircle() + "<br>");
+    document.write("Chu vi hình tròn là: " + perCircle() + "<br>");
+</script>
+</body>
+</html>

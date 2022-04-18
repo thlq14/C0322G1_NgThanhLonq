@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+    let nums = [];
+    let n = parseInt(prompt("Độ dài mảng: "));
+    for (let i = 0; i < n; i++) {
+        nums.push(parseInt(prompt("Nhập mảng kí tự: ")));
+    }
+    let arr = prompt("Nhập kí tự cần kiểm tra: ");
+
+    function character() {
+        let count = 0;
+        let flag = false;
+        for (let j = 0; j < nums.length; j++) {
+            if (arr === nums[i]) {
+                flag = true;
+                count++;
+            }
+        }
+        if (flag === true) {
+            document.write("Số lần xuất hiện của kí tự " + arr + " là " + count);
+        } else {
+            document.write(-1);
+        }
+        return flag;
+    }
+
+    document.write(character());
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Kiểm tra số nguyên tố.
+    let number = parseInt(prompt("Enter a Number: "));
+
+    function isPrime(number) {
+        let numb = 2;
+        let count = 0;
+        document.write(number + " số nguyên tố đầu tiên là: " + "<br>");
+        while (count < number) {
+            let flag = true;
+            for (let i = 2; i < numb; i++) {
+                if (numb % i === 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag === true) {
+                document.write(numb + "<br>");
+                count++;
+            }
+            numb++;
+        }
+        return flag;
+    }
+
+    document.write(isPrime(number));
+</script>
+</body>
+</html>
