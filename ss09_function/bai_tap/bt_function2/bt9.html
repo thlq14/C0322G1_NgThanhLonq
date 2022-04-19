@@ -17,15 +17,13 @@
 
     function character(nums) {
         let count = 0;
-        let flag = false;
         for (let j = 0; j < nums.length; j++) {
             if (arr === nums[j]) {
-                flag = true;
                 count++;
             }
         }
-        if (flag === true) {
-            return "Số lần xuất hiện của kí tự " + arr + " là " + count;
+        if (count !== 0) {
+            return "Kí tự " + arr + " xuất hiện " + count + " lần.";
         } else {
             return -1;
         }
