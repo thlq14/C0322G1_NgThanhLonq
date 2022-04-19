@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Rectange = function (width, height) {
+        this.width = width;
+        this.height = height;
+        this.getWidth = function () {
+            return this.width;
+        }
+        this.setWidth = function (width) {
+            this.width = width;
+        }
+        this.getHeight = function () {
+            return this.height;
+        }
+        this.setHeight = function (height) {
+            this.height = height;
+        }
+        this.getAcreage = function () {
+            return this.width * this.height;
+        }
+        this.getPerimeter = function () {
+            return (this.width + this.height) * 2;
+        }
+    }
+    let rect = new Rectange(4, 5);
+    document.write("Diện tích HCN là: " + rect.getAcreage() + "<br>");
+    document.write("Chu vi HCN là: " + rect.getPerimeter());
+
+</script>
+</body>
+</html>
