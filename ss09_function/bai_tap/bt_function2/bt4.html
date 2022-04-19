@@ -11,11 +11,7 @@
     let n = prompt("Nhập kí tự: ");
 
     function result() {
-        if (!isNaN(n)) {
-            return true;
-        } else {
-            return false;
-        }
+        return !isNaN(n);
     }
 
     document.write(result());

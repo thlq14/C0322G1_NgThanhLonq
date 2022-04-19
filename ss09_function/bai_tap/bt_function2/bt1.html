@@ -9,12 +9,11 @@
     // Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
     let number = parseFloat(prompt("Enter a Number: "));
 
-    function square() {
-        sqrt = Math.pow(number, 2);
-        return sqrt;
+    function square(number) {
+        return Math.pow(number, 2);
     }
 
-    document.write(square());
+    document.write(square(number));
 </script>
 </body>
 </html>

@@ -8,16 +8,16 @@
 <script>
     // Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
     let number = parseInt(prompt("Enter a Number: "));
-    let factorial = 1;
 
-    function result() {
+    function result(number) {
+        let factorial = 1;
         for (let i = 1; i <= number; i++) {
             factorial = factorial * i;
         }
         return factorial;
     }
 
-    document.write(number + " ! = " + result());
+    document.write(number + " ! = " + result(number));
 </script>
 </body>
 </html>

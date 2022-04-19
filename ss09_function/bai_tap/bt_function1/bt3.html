@@ -11,16 +11,15 @@
     let a = parseFloat(prompt("Nhập a: "));
     let b = parseFloat(prompt("Nhập b: "));
 
-    function sum() {
+    function sum(a, b) {
         if (a > b) {
-            return alert("a lớn hơn b");
+            alert("a lớn hơn b");
         } else {
-            resultSum = a + b;
-            return resultSum;
+            return a + b;
         }
     }
 
-    document.write(sum());
+    document.write(sum(a, b));
 </script>
 </body>
 </html>

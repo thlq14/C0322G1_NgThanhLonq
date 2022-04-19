@@ -11,28 +11,28 @@
     let nums = [];
     let n = parseInt(prompt("Độ dài mảng: "));
     for (let i = 0; i < n; i++) {
-        nums.push(parseInt(prompt("Nhập mảng kí tự: ")));
+        nums.push(prompt("Nhập mảng kí tự: "));
     }
+    console.log(nums)
     let arr = prompt("Nhập kí tự cần kiểm tra: ");
 
-    function character() {
+    function character(nums) {
         let count = 0;
         let flag = false;
         for (let j = 0; j < nums.length; j++) {
-            if (arr === nums[i]) {
+            if (arr === nums[j]) {
                 flag = true;
                 count++;
             }
         }
         if (flag === true) {
-            document.write("Số lần xuất hiện của kí tự " + arr + " là " + count);
+            return "Số lần xuất hiện của kí tự " + arr + " là " + count;
         } else {
-            document.write(-1);
+            return -1;
         }
-        return flag;
     }
 
-    document.write(character());
+    document.write(character(nums));
 </script>
 </body>
 </html>
