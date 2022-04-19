@@ -6,14 +6,14 @@
 </head>
 <body>
 <script>
-    // Kiểm tra số nguyên tố.
+    // Nhập n số nguyên tố.
     let number = parseInt(prompt("Enter a Number: "));
 
     function isPrime(number) {
         let numb = 2;
         let count = 0;
         document.write(number + " số nguyên tố đầu tiên là: " + "<br>");
-        while (count < number) {
+         while (count < number) {
             let flag = true;
             for (let i = 2; i < numb; i++) {
                 if (numb % i === 0) {
