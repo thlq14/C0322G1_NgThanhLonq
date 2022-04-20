@@ -11,18 +11,18 @@
             this.celsius = celsius;
         }
 
-        getconvertCtoF() {
+        getConvertCToF() {
             return (this.celsius * 9 / 5) + 32;
         }
 
-        getconvertCtoK() {
+        getConvertCToK() {
             return this.celsius + 273.15;
         }
     }
 
     let temp = new Temperature(20);
-    document.write(temp.celsius + " độ Celsius = " + temp.getconvertCtoF() + " độ Fahrenheit." + "<br>");
-    document.write(temp.celsius + " độ Celsius = " + temp.getconvertCtoK() + " độ Kelvin.");
+    document.write(temp.celsius + " độ Celsius = " + temp.getConvertCToF() + " độ Fahrenheit." + "<br>");
+    document.write(temp.celsius + " độ Celsius = " + temp.getConvertCToK() + " độ Kelvin.");
 </script>
 </body>
 </html>
