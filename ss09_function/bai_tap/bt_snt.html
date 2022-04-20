@@ -6,31 +6,34 @@
 </head>
 <body>
 <script>
-    // Nhập n số nguyên tố.
-    let number = parseInt(prompt("Enter a Number: "));
+    // Kiểm tra số nguyên tố.
+    let numb = parseInt(prompt("Nhập một số nguyên bất kì: "));
 
     function isPrime(number) {
-        let numb = 2;
-        let count = 0;
-        document.write(number + " số nguyên tố đầu tiên là: " + "<br>");
-         while (count < number) {
-            let flag = true;
-            for (let i = 2; i < numb; i++) {
-                if (numb % i === 0) {
-                    flag = false;
-                    break;
-                }
-            }
-            if (flag === true) {
-                document.write(numb + "<br>");
-                count++;
-            }
-            numb++;
+        if (number < 2) {
+            return false;
         }
-        return flag;
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    document.write(isPrime(number));
+    if (isPrime(numb)) {
+        document.write(numb + " là số nguyên tố. " + "<br>");
+    } else {
+        document.write(numb + " không phải là số nguyên tố.");
+    }
+    document.write("Các số nguyên tố nhỏ hơn 10000: <br>")
+    let n = 0;
+    while (n < 10000) {
+        if (isPrime(n)) {
+            document.write(n + "<br>");
+        }
+        n++;
+    }
 </script>
 </body>
 </html>

@@ -8,28 +8,28 @@
 <script>
     // Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
     // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
-    let nums = [];
+    let arr = [];
     let n = parseInt(prompt("Độ dài mảng: "));
     for (let i = 0; i < n; i++) {
-        nums.push(prompt("Nhập mảng kí tự: "));
+        arr.push(prompt("Nhập mảng kí tự: "));
     }
-    let arr = prompt("Nhập kí tự cần kiểm tra: ");
+    let nums = prompt("Nhập kí tự cần kiểm tra: ");
 
-    function character(nums) {
+    function character(nums, arr) {
         let count = 0;
-        for (let j = 0; j < nums.length; j++) {
-            if (arr === nums[j]) {
+        for (let j = 0; j < arr.length; j++) {
+            if (nums === arr[j]) {
                 count++;
             }
         }
         if (count !== 0) {
-            return "Kí tự " + arr + " xuất hiện " + count + " lần.";
+            return "Kí tự " + nums + " xuất hiện " + count + " lần.";
         } else {
             return -1;
         }
     }
 
-    document.write(character(nums));
+    document.write(character(nums, arr));
 </script>
 </body>
 </html>
