@@ -9,20 +9,17 @@
     class Circle {
         constructor(radius) {
             this.radius = radius;
-    }
-    // setRadius(newRadius) {
-    //    this.radius = radius;
-    // }
-    getRadius() {
+        }
+
+        getRadius() {
             return this.radius;
-    }
-    // setArea(newArea) {
-    //     this.area ;
-    // }
-    getArea() {
-            return this.area =  Math.PI * radius * radius;
+        }
+
+        getArea() {
+            return Math.PI * radius * radius;
         }
     }
+
     let circle = new Circle(2);
     let radius = circle.getRadius(); // 2
     let area = circle.getArea(); // 12.566370614359172

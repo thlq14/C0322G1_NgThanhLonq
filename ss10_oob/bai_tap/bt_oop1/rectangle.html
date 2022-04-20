@@ -6,29 +6,32 @@
 </head>
 <body>
 <script>
-    let Rectange = function (width, height) {
-        this.width = width;
-        this.height = height;
-        this.getWidth = function () {
-            return this.width;
-        }
-        this.setWidth = function (width) {
+    class Rectange {
+        constructor(width, height) {
             this.width = width;
-        }
-        this.getHeight = function () {
-            return this.height;
-        }
-        this.setHeight = function (height) {
             this.height = height;
         }
-        this.getAcreage = function () {
+
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+
+        setHeight(newWeight) {
+            this.height = newWeight;
+        }
+
+        getAcreage() {
             return this.width * this.height;
         }
-        this.getPerimeter = function () {
+
+        getPerimeter() {
             return (this.width + this.height) * 2;
         }
     }
+
     let rect = new Rectange(4, 5);
+    rect.setWidth(5);
+    rect.setHeight(7);
     document.write("Diện tích HCN là: " + rect.getAcreage() + "<br>");
     document.write("Chu vi HCN là: " + rect.getPerimeter());
 
