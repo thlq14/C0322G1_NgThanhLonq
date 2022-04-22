@@ -7,49 +7,46 @@
 <body>
 <script>
     class ElectricLamp {
-        constructor(status) {
-            this.status = true;
+        constructor() {
+            this._status = false;
         }
 
         turnOff() {
-            this.status = false;
+            this._status = false;
+            alert("Đèn Tắt.")
         }
 
         turnOn() {
-            this.status = true;
+            this._status = true;
+            alert("Đèn Sáng.")
         }
     }
 
     class SwitchButton {
-        constructor(status, lamp) {
-            this.status = true;
-            this.lamp;
+        constructor() {
+            this._status = false;
         }
 
-        connectToLamp(lamp) {
-            this.lamp = lamp;
+        connectToLamp(electricLamp) {
+            this._electricLamp = electricLamp;
         }
 
         switchOff() {
-            lamp.turnOff();
+            this._status = false;
+            this._electricLamp.turnOff();
         }
 
         switchOn() {
-            lamp.turnOn();
+            this._status = true;
+            this._electricLamp.turnOn();
         }
     }
 
-    let lamp = new ElectricLamp();
-    let button = new SwitchButton();
-    button.connectToLamp();
-    document.write("Button is connected to lamp." + "<br>");
-    for (let i = 0; i < 10; i++) {
-        button.switchOn();
-        if (lamp.status) {
-            document.write("The lamp is on." + "<br>");
-        }
-            document.write("The lamp is off." + "<br>");
-    }
+    let electricLamp = new ElectricLamp();
+    let switchButton = new SwitchButton();
+    switchButton.connectToLamp(electricLamp);
+    switchButton.switchOn();
+    switchButton.switchOff();
 </script>
 </body>
 </html>
