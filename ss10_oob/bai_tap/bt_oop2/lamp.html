@@ -5,6 +5,54 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    class ElectricLamp {
+        constructor(status) {
+            this.status = true;
+        }
 
+        turnOff() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+    }
+
+    class SwitchButton {
+        constructor(status, lamp) {
+            this.status = true;
+            this.lamp;
+        }
+
+        connectToLamp(lamp) {
+            this.lamp = lamp;
+        }
+
+        switchOff() {
+            lamp.turnOff();
+        }
+
+        switchOn() {
+            lamp.turnOn();
+        }
+    }
+
+    let lamp = new ElectricLamp();
+    let button = new SwitchButton();
+    button.connectToLamp();
+    document.write("Button is connected to lamp." + "<br>");
+    for (let i = 0; i < 10; i++) {
+        button.switchOn();
+        if (lamp.status) {
+            document.write("The lamp is on." + "<br>");
+        }
+        button.switchOff();
+        if (!lamp.status) {
+            document.write("The lamp is off." + "<br>");
+        }
+    }
+</script>
 </body>
 </html>

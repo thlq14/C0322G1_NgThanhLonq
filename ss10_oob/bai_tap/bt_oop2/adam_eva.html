@@ -5,6 +5,62 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
 
+        getWeight() {
+            return this.weight;
+        }
+
+        decreaseWeight() {
+            if (this.weight > 0) {
+                this.weight--;
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        setApple(apple) {
+            this.apple = apple;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                this.weight++;
+                apple.decreaseWeight();
+            }
+        }
+        say(value) {
+            return value;
+        }
+    }
+    let apple = new Apple(2);
+    let adam = new Human("Adam", "Male", 65);
+    let eva = new Human("Eva", "Female", 55);
+    adam.setApple(apple);
+    eva.setApple(apple);
+    while (apple.getWeight() > 0) {
+        document.write("Adam nói: " + adam.say("E ăn đi. ") + "<br>");
+        eva.eat(apple);
+        document.write("Cân nặng táo còn: " + apple.getWeight() + "<br>");
+        document.write("Cân nặng Eva: " + eva.getWeight() + "<br>");
+        document.write("Eva nói: " + adam.say("A ăn đi.") + "<br>");
+        adam.eat(apple);
+        document.write("Cân nặng táo còn: " + apple.getWeight() + "<br>");
+        document.write("Cân nặng Adam: " + adam.getWeight() + "<br>");
+    }
+</script>
 </body>
 </html>
