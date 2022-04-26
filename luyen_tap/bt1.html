@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Nhập 1 chuỗi bất kì. Hãy tìm số từ và số kí tự chữ có trong chuỗi.
+    let arr1 = prompt("Nhập chuỗi: ")
+    let arr2 = 1;
+    let count = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        if (isNaN(arr1[i])) {
+            count++;
+        }
+    }
+    document.write("Số kí tự: " + count + "<br>");
+
+    for (let j = 0; j < arr1.length; j++) {
+        if (arr1[j] !== " " && arr1[j + 1] === " ") {
+            arr2++;
+        }
+    }
+    document.write("Số từ: " + arr2);
+</script>
+</body>
+</html>

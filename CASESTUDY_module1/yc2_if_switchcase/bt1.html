@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết một chương trình để nhập lương nhân viên, tính thuế thu nhập và lương ròng.
+    // Với các thông số giả sử như sau:
+    // 20% thuế thu nhập nếu lương là 15 triệu.
+    // 10% thuế thu nhập nếu lương từ 7 đến 15 triệu.
+    // 5% thuế thu nhập nếu lương dưới 7 triệu
+    let grossSalary = parseFloat(prompt("Nhập  lương nhân viên: ", "triệu đồng"));
+    let ttncn;
+    let netSalary;
+    if (grossSalary < 7) {
+        ttncn = grossSalary * 5 / 100;
+        netSalary = grossSalary - ttncn;
+        alert("Thuế thu nhập: " + ttncn + " triệu đồng.");
+        alert("Lương thực nhận: " + netSalary + " triệu đồng.");
+    } else if (grossSalary > 7 && grossSalary < 15) {
+        ttncn = grossSalary * 10 / 100;
+        netSalary = grossSalary - ttncn;
+        alert("Thuế thu nhập: " + ttncn + " triệu đồng.");
+        alert("Lương thực nhận: " + netSalary + " triệu đồng.");
+    } else {
+        ttncn = grossSalary * 20 / 100;
+        netSalary = grossSalary - ttncn;
+        alert("Thuế thu nhập: " + ttncn + " triệu đồng.");
+        alert("Lương thực nhận: " + netSalary + " triệu đồng.");
+    }
+</script>
+</body>
+</html>

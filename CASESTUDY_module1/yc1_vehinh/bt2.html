@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Vẽ tam giác vuông cân rỗng.
+    let h = parseInt(prompt("Nhập chiều cao tam giác: "));
+    for (let i = 0; i <= h - 1; i++) {
+        for (let j = 0; j < h; j++) {
+            if (j === 0 || j === i || i === h - 1) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều,
+    // đếm các số nguyên tố có trong mảng đó.
+    let raw = parseInt(prompt("Nhập số hàng: "));
+    let col = parseInt(prompt("Nhập số cột: "));
+    let array2d = [];
+    for (let i = 0; i < raw; i++) {
+        array2d[i] = [];
+        for (let j = 0; j < col; j++) {
+            array2d[i][j] = parseInt(prompt("Nhập phần tử: "));
+        }
+    }
+    console.log(array2d);
+    let arr = isPrime(array2d)
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        } else {
+            for (let k = 2; k < number; k++) {
+                if (number % k === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    document.write("Các số nguyên tố có trong mảng: " + "<br>");
+
+    function primeArray2d() {
+        let count = 0;
+        for (let i = 0; i < raw; i++) {
+            for (let j = 0; j < col; j++) {
+                if (isPrime(array2d[i][j])) {
+                    count++;
+                    document.write(array2d[i][j] + " ");
+                }
+            }
+        }
+        document.write("<br>" + "Số lượng số nguyên tố có trong mảng: " + count);
+    }
+
+    primeArray2d(arr);
+</script>
+</body>
+</html>

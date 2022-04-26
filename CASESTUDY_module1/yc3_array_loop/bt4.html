@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ.
+    let num = prompt("Nhập số: ");
+    let number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+    let word = ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Không"];
+    let index;
+
+    if (!isNaN(num)) {
+        for (let i = 0; i < num.length; i++) {
+            index = number.indexOf(num[i]);
+            document.write(word[index] + " ");
+        }
+    } else {
+        document.write("KHÔNG phải số. Nhập lại. ");
+    }
+</script>
+</body>
+</html>
