@@ -51,6 +51,108 @@
 <button type="button" onclick="buyTicket()">Mua Vé</button>
 <button type="button" onclick="ketQua()">Xem Kết Quả</button>
 <script>
+    class VietLot {
+        constructor(num1, num2, num3, num4, num5, num6) {
+            this._num1 = num1;
+            this._num2 = num2;
+            this._num3 = num3;
+            this._num4 = num4;
+            this._num5 = num5;
+            this._num6 = num6;
+        }
+
+        getNum1() {
+            return this._num1;
+        }
+
+        setNum1(value) {
+            this._num1 = value;
+        }
+
+        getNum2() {
+            return this._num2;
+        }
+
+        setNum2(value) {
+            this._num2 = value;
+        }
+
+        getNum3() {
+            return this._num3;
+        }
+
+        setNum3(value) {
+            this._num3 = value;
+        }
+
+        getNum4() {
+            return this._num4;
+        }
+
+        setNum4(value) {
+            this._num4 = value;
+        }
+
+        getNum5() {
+            return this._num5;
+        }
+
+        setNum5(value) {
+            this._num5 = value;
+        }
+
+        getNum6() {
+            return this._num6;
+        }
+
+        setNum6(value) {
+            this._num6 = value;
+        }
+    }
+
+    function buyTicket() {
+        do {
+            let choose = parseInt(prompt(" " +
+                "Bạn có 2 lựa chọn: \n" +
+                "1. Bạn muốn tự chọn số: \n" +
+                "2. Hệ thống tự random."));
+            if (choose === 1) {
+                let num1 = parseInt(prompt("Nhập số thứ 1: "));
+                let num2 = parseInt(prompt("Nhập số thứ 2: "));
+                let num3 = parseInt(prompt("Nhập số thứ 3: "));
+                let num4 = parseInt(prompt("Nhập số thứ 4: "));
+                let num5 = parseInt(prompt("Nhập số thứ 5: "));
+                let num6 = parseInt(prompt("Nhập số thứ 6: "));
+                alert("Bạn đã mua thành công.");
+                alert("Số bạn chọn là: " + num1 + " " + num2 + " " + num3 + " " + num4 + " " + num5 + " " + num6);
+            } else if (choose === 2) {
+                let num1 = Math.floor(Math.random() * 100);
+                let num2 = Math.floor(Math.random() * 100);
+                let num3 = Math.floor(Math.random() * 100);
+                let num4 = Math.floor(Math.random() * 100);
+                let num5 = Math.floor(Math.random() * 100);
+                let num6 = Math.floor(Math.random() * 100);
+                alert("Bạn đã mua thành công.");
+                alert("Số bạn chọn là: " + num1 + " " + num2 + " " + num3 + " " + num4 + " " + num5 + " " + num6);
+            } else {
+                alert("Chỉ được nhập 1 hoặc 2.\n" +
+                    " Vui lòng nhập lại: ");
+            }
+            break;
+        } while (true);
+    }
+
+    function ketQua() {
+        let num1 = Math.floor(Math.random() * 100);
+        let num2 = Math.floor(Math.random() * 100);
+        let num3 = Math.floor(Math.random() * 100);
+        let num4 = Math.floor(Math.random() * 100);
+        let num5 = Math.floor(Math.random() * 100);
+        let num6 = Math.floor(Math.random() * 100);
+        alert("Kết quả xổ số: " + num1 + " " + num2 + " " + num3 + " " + num4 + " " + num5 + " " + num6);
+    }
+
+
 </script>
 </body>
 </html>

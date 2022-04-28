@@ -7,17 +7,17 @@
 <body>
 <script>
     // Viết một chương trình gọi thức uống đơn giản.
-    let menu = prompt(" " +
-        "Menu\n" +
-        "1. Cafe\n" +
-        "2. Cam Vắt\n" +
-        "3. Nước Ép Cà Rốt\n" +
-        "4. Nước Ép Cà Chua\n" +
-        "5. Nước Lọc\n" +
-        "6. Nước Dừa\n" +
-        "7. Thoát Gọi Món");
-    let count;
     do {
+        let count = 0;
+        let menu = prompt(" " +
+            "Menu\n" +
+            "1. Cafe\n" +
+            "2. Cam Vắt\n" +
+            "3. Nước Ép Cà Rốt\n" +
+            "4. Nước Ép Cà Chua\n" +
+            "5. Nước Lọc\n" +
+            "6. Nước Dừa\n" +
+            "7. Thoát Gọi Món");
         switch (menu) {
             case '1':
                 alert("Cafe giá: 15.000k.");
@@ -49,8 +49,13 @@
                 count = prompt("Nhập số lượng: ");
                 alert("Số tiền phải trả: " + count * 35000 + "k.");
                 break;
+            case "7":
+                alert("Tổng giá tiền cần thanh toán: " + count);
+                break;
+            default:
+                alert("Vui lòng nhập từ 1 -> 7. ");
         }
-    } while (menu === '7');
+    } while (true);
 </script>
 </body>
 </html>
