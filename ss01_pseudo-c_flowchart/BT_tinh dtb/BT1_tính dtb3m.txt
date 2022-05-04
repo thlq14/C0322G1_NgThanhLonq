@@ -1,8 +1,0 @@
-Bài Tập: Mô tả thuật toán tính điểm trung bình.
-BEGIN 
-    INPUT M="điểm môn Toán"
-	      P="điểm môn Lí"
-		  C="điểm môn Hoá"
-	     ĐTB=(M+P+C)/3
-	DISPLAY ĐTB
-END

@@ -1,6 +1,0 @@
-BT chuyển đổi tiền tệ
-BEGIN 
-    INPUT USD 
-	 VND = USD / 23000
-	DISPLAY VND
-END
