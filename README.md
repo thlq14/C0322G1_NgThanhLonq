@@ -1,1 +1,1 @@
-# C0322G1_NgThnhLnq_Module_3
+# C0322G1_Ng_Thnh_lnq
