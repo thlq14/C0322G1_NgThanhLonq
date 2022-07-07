@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Khách Hàng</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,td {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<Form>
+        <tr>
+            <th><h2>Market Research Survey</h2></th>
+        </tr>
+        <tr>
+            <th><h4>Please take a few moments to complete this satisfaction survey.</h4></th>
+        </tr><hr>
+    <table>
+        <tr>
+            <td>
+            <b>What is your age range?</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="age">
+                    <option value="18 - 24"> 18 - 24</option>
+                    <option value="25 - 34"> 25 - 34</option>
+                    <option value="35 - 50"> 35 - 50</option>
+                    <option value="50+"> 50+ </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>What is your yearly income range?</b><br>
+                <select name="cost">
+                    <option value="cost"> $0 - $25,000</option>
+                    <option value="cost"> $25,001 - $50,000</option>
+                    <option value="cost"> $50,001 - $100,000</option>
+                    <option value="cost"> $100,000+ </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <b>Gender Identify</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="gender" value="Male">Male<br>
+                <input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="Nonbinary">Nonbinary<br>
+                <input type="radio" name="gender" value="Other">Other<br>
+                <input type="text"><br>
+                <p>Maximum of 250 characters.    <i>Currently Used: 0 characters.</i></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="product" value="Product">Product 1<br>
+                <input type="checkbox" name="product" value="Product">Product 2<br>
+                <input type="checkbox" name="product" value="Product">Product 3<br>
+            </td>
+        </tr>
+        <tr>
+            <td><b>How often would you use our new product?</b></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="gender" value="Daily">Daily<br>
+                <input type="radio" name="gender" value="Weekly">Weekly<br>
+                <input type="radio" name="gender" value="Monthly">Monthly<br>
+            </td>
+        </tr>
+        <tr>
+            <td><b>What would you pay for the new product?</b></td>
+        </tr>
+        <tr>
+            <td>
+                 $  <input type="text" name="dollars" placeholder="Dollars">.
+                <input type="text" name="cents" placeholder="Cents">
+                <pre>  Dollars                  Cents</pre>
+            </td>
+        </tr>
+        <tr>
+            <td><b>What features would you like to see in the new product.</b></td>
+        </tr>
+        <tr>
+            <td>
+                <textarea rows="5" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Please rate your level of agreêmnt with the following statements.</td>
+        </tr>
+        <tr>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Strongly Disagree</td>
+                    <td>Disagree</td>
+                    <td>Agree</td>
+                    <td>Strongly Agree</td>
+                </tr>
+                <tr>
+                    <th>Our products are priced fairly.</th>
+                    <td>
+                        <center><input type="radio" name="1" value="1"><br>1</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="2" value="2"><br>2</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="3" value="3"><br>3</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="4" value="4"><br>4</center>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Our products are high quality.</th>
+                    <td>
+                        <center><input type="radio" name="1" value="1"><br>1</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="2" value="2"><br>2</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="3" value="3"><br>3</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="4" value="4"><br>4</center>
+                    </td>
+                </tr>
+                <tr>
+                    <th>You would recommend our product to a friend or coworker.</th>
+                    <td>
+                        <center><input type="radio" name="1" value="1"><br>1</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="2" value="2"><br>2</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="3" value="3"><br>3</center>
+                    </td>
+                    <td>
+                        <center><input type="radio" name="4" value="4"><br>4</center>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Submit" value="Submit">
+            </td>
+        </tr>
+    </table>
+</Form>
+</body>
+</html>

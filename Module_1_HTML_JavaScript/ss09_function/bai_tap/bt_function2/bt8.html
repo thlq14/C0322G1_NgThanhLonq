@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    let nums = [];
+    let n = parseInt(prompt("Độ dài mảng: "));
+    for (let i = 0; i < n; i++) {
+        nums.push(parseInt(prompt("Nhập mảng số nguyên: ")));
+    }
+
+    function swap(nums) {
+        let first = 0;
+        let last = nums.length - 1;
+        while (first < last) {
+            let i = nums[first];
+            nums[first] = nums[last];
+            nums[last] = i;
+            first++;
+            last--;
+        }
+        return nums;
+    }
+
+    document.write(swap(nums));
+</script>
+</body>
+</html>

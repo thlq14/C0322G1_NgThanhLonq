@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        getConvertCToF() {
+            return (this.celsius * 9 / 5) + 32;
+        }
+
+        getConvertCToK() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    let temp = new Temperature(20);
+    document.write(temp.celsius + " độ Celsius = " + temp.getConvertCToF() + " độ Fahrenheit." + "<br>");
+    document.write(temp.celsius + " độ Celsius = " + temp.getConvertCToK() + " độ Kelvin.");
+</script>
+</body>
+</html>

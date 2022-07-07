@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết một chương trình gọi thức uống đơn giản.
+    do {
+        let count = 0;
+        let menu = prompt(" " +
+            "Menu\n" +
+            "1. Cafe\n" +
+            "2. Cam Vắt\n" +
+            "3. Nước Ép Cà Rốt\n" +
+            "4. Nước Ép Cà Chua\n" +
+            "5. Nước Lọc\n" +
+            "6. Nước Dừa\n" +
+            "7. Thoát Gọi Món");
+        switch (menu) {
+            case '1':
+                alert("Cafe giá: 15.000k.");
+                count = prompt("Nhập số lượng: ");
+                alert("Số tiền phải trả: " + count * 15000 + "k.");
+                break;
+            case '2':
+                alert("Cam Vắt giá: 20.000k.");
+                count = prompt("Nhập số lượng: ");
+                alert("Số tiền phải trả: " + count * 20000 + "k.");
+                break;
+            case '3':
+                alert("Nước Ép Cà Rốt giá: 25.000k.");
+                count = prompt("Nhập số lượng: ");
+                alert("Số tiền phải trả: " + count * 25000 + "k.");
+                break;
+            case '4':
+                alert("Nước Ép Cà Chua giá: 25.000k.");
+                count = prompt("Nhập số lượng: ");
+                alert("Số tiền phải trả: " + count * 25000 + "k.");
+                break;
+            case '5':
+                alert("Nước Lọc giá: 10.000k.");
+                count = prompt("Nhập số lượng: ");
+                alert("Số tiền phải trả: " + count * 10000 + "k.");
+                break;
+            case '6':
+                alert("Nước Dừa giá: 35.000k.");
+                count = prompt("Nhập số lượng: ");
+                alert("Số tiền phải trả: " + count * 35000 + "k.");
+                break;
+            case "7":
+                alert("Tổng giá tiền cần thanh toán: " + count);
+                break;
+            default:
+                alert("Vui lòng nhập từ 1 -> 7. ");
+        }
+    } while (true);
+</script>
+</body>
+</html>

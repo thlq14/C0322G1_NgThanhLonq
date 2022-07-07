@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tạo một mảng với bảy phần tử dạng chuỗi có giá trị là tên các ngôi sao sau: Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus.
+    // Tạo một mảng khác với bảy phần tử dạng chuỗi có giá trị là tên các chòm sao tương ứng chứa các ngôi sao: Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major và Leo.
+    // Tiếp theo, tạo một hàm nhận vào một tham số dạng chuỗi duy nhất.
+    // Trong hàm này, duyệt qua mảng thứ nhất để tìm tên ngôi sao. Nếu tìm thấy, trả lại giá trị tương ứng với chỉ số đó ở mảng thứ hai.
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let find = prompt("Nhập ngôi sao muốn tìm kiếm: ");
+
+    function result(find) {
+        let index = -1;
+        for (let i = 0; i < star.length; i++) {
+            if (find === star[i]) {
+                document.write("NGÔI SAO " + star[i] + " có CHÒM SAO tương ứng là " + constellation[i]);
+                index = i;
+
+            }
+        }
+        if (index === -1) {
+            document.write("KHÔNG tìm thấy chòm sao tương ứng.");
+        }
+    }
+
+    result(find);
+</script>
+</body>
+</html>

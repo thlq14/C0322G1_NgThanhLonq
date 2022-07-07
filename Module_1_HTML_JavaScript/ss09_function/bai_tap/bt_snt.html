@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Kiểm tra số nguyên tố.
+    let numb = parseInt(prompt("Nhập một số nguyên bất kì: "));
+
+    function isPrime(numb) {
+        if (numb < 2) {
+            return false;
+        }
+        for (let i = 2; i < numb; i++) {
+            if (numb % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    if (isPrime(numb)) {
+        document.write(numb + " là số nguyên tố. " + "<br>");
+    } else {
+        document.write(numb + " không phải là số nguyên tố.");
+    }
+    document.write(" Các số nguyên tố nhỏ hơn 10000: <br>")
+    let n = 0;
+    while (n < 10000) {
+        if (isPrime(n)) {
+            document.write(n + "<br>");
+        }
+        n++;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //  Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    let str1 = prompt("Nhập chuỗi 1: ");
+    let str2 = prompt("Nhập chuỗi 2: ");
+    let flag = true;
+    if (str1.length !== str2.length) {
+        document.write("2 chuỗi khác nhau.");
+    } else {
+        for (let i = 0; i < str1.length; i++) {
+            if (str1[i] !== str2[i]) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag === true) {
+            document.write("2 chuỗi giống nhau.");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Cho mảng a chỉ chứa các số nguyên.
+    // Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
+    // b[0] = a[0].
+    // b[1] = a[0] + a[1].
+    // b[2] = a[0] + a[1] + a[2].
+    // ...
+    // b[n - 1] = a[0] + a[1] + ... + a[n - 1].
+    // với n là độ dài của mảng.
+
+    let a = [];
+    let b = [];
+    let n = parseInt(prompt("Nhập độ dài mảng: "));
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        a.push(parseInt(prompt("Nhập mảng: ")));
+    }
+    for (let j = 0; j < a.length; j++) {
+        sum += a[j];
+        b.push(sum[j]);
+        document.write(sum);
+    }
+</script>
+</body>
+</html>

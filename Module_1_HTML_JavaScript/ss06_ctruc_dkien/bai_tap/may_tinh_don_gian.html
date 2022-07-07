@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính</title>
+    <style>
+        tr, td button {
+            width: 50px;
+            height: 50px;
+        }
+         button {
+             color: blue;
+         }
+         table {
+             ;
+         }
+    </style>
+</head>
+
+
+<body>
+<table border="5px solid black" cellpadding="10">
+    <tr>
+        <td colspan="4" style="height: 50px"><input type="text" style="width: 260px; height: 50px; text-align: right"  id="result"></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="cal('1')">1</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('2')">2</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('3')">3</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('+')">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="cal('4')">4</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('5')">5</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('6')">6</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('-')">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="cal('7')">7</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('8')">8</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('9')">9</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('*')">x</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="remove()">C</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('0')">0</button>
+        </td>
+        <td>
+            <button type="button" onclick="ketqua()">=</button>
+        </td>
+        <td>
+            <button type="button" onclick="cal('/')">/</button>
+        </td>
+    </tr>
+</table>
+<script>
+    let stringValue = '';
+    function cal(value) {
+        stringValue += value;
+        document.getElementById("result").value = stringValue;
+    }
+
+    function ketqua() {
+
+        document.getElementById("result").value = eval(document.getElementById("result").value);
+        stringValue = document.getElementById("result").value;
+    }
+
+    function remove(){
+        document.getElementById("result").value = "";
+        stringValue = "";
+    }
+
+</script>
+</body>
+</html>

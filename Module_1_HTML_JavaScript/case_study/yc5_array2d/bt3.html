@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều.
+  let raw = parseInt(prompt("Nhập số hàng: "));
+  let col = parseInt(prompt("Nhập số cột: "));
+  let array2d = [];
+  for (let i = 0; i < raw; i++) {
+      array2d[i] = [];
+      for (let j = 0; j < col; j++) {
+          array2d[i][j] = parseInt(prompt("Nhập phần tử: "));
+      }
+  }
+  function maxOfArray2d() {
+      let max = array2d[0][0];
+      let min = array2d[0][0];
+      for (let i = 0; i < raw; i++) {
+          for(let j = 0; j < col; j++) {
+              if (max < array2d[i][j]) {
+                  max = array2d[i][j];
+              }
+              if (min > array2d[i][j]) {
+                  min = array2d[i][j];
+              }
+          }
+      }
+      document.write("Giá trị lớn nhất là: " + max + "<br>");
+      document.write("Giá trị nhỏ nhất là: " + min + "<br>");
+  }
+  maxOfArray2d(array2d);
+</script>
+</body>
+</html>

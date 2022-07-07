@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Chương trình tính thuế thu nhập cá nhân.
+    let tncn = parseFloat(prompt("Nhập Thu nhập cá nhân", "triệu đồng"));
+    let ttn;
+    if (tncn < 5) {
+        ttn = tncn * 5 / 100;
+        alert("Số tiền thuế phải nộp là " + ttn);
+    } else if (tncn < 10) {
+        ttn = tncn * 10 / 100 - 0.25;
+        alert("Số tiền thuế phải nộp là " + ttn);
+    } else if (tncn < 50) {
+        ttn = tncn * 20 / 100 - 0.75;
+        alert("Số tiền thuế phải nộp là " + ttn);
+    } else if (tncn < 100) {
+        ttn = tncn * 25 / 100 - 1.5;
+        alert("Số tiền thuế phải nộp là " + ttn);
+    } else {
+        ttn = tncn * 30 / 100 - 2.5;
+        alert("Số tiền thuế phải nộp là " + ttn);
+    }
+</script>
+</body>
+</html>

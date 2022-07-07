@@ -1,0 +1,10 @@
+BT tìm số lớn nhất trong 3 số
+BEGIN 
+    INPUT a, b, c
+	Max = a
+	IF b> max
+      DISPLAY b
+      IF c> max 
+      DISPLAY c
+    END IF 
+END	
