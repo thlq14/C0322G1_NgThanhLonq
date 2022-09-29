@@ -1,0 +1,303 @@
+{
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn A",
+      "dateOfBirth": "1999-03-02",
+      "gender": "Male",
+      "idCard": 124563987,
+      "phone": "0901452369",
+      "email": "vana@gmail.com",
+      "address": "Đà Nẵng",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Trần Thị Bình",
+      "dateOfBirth": "1997-02-13",
+      "gender": "Female",
+      "idCard": 784563129,
+      "phone": "0901234567",
+      "email": "thib@gmail.com",
+      "address": "Quảng Nam",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ngọc C",
+      "dateOfBirth": "1999-06-01",
+      "gender": "Male",
+      "idCard": 123456789,
+      "phone": "0901234567",
+      "email": "name@gmail.com",
+      "address": "address",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Customer",
+      "dateOfBirth": "1999-01-10",
+      "gender": "Female",
+      "idCard": 312564879,
+      "phone": "0901234569",
+      "email": "m@makd",
+      "address": "akjbsâc",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Name B C",
+      "dateOfBirth": "1999-02-17",
+      "gender": "Male",
+      "idCard": 321546879,
+      "phone": "0901237896",
+      "email": "m@mpoiuy",
+      "address": "address",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": 8,
+      "name": "N",
+      "dateOfBirth": "1999-10-10",
+      "gender": "Female",
+      "idCard": 123456789,
+      "phone": "0901234567",
+      "email": "m@M",
+      "address": "adksljc",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    }
+  ],
+  "facility": [
+    {
+      "id": 1,
+      "facilityType": "Villa",
+      "name": "Phòng Suite Hướng Biển",
+      "area": 85.8,
+      "cost": 1000,
+      "maxPeople": 5,
+      "rentType": "Year",
+      "standardRoom": "Vip",
+      "descriptionOtherConvenience": "Có TV",
+      "poolArea": 50,
+      "numberFloor": 5,
+      "facilityFree": "",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"
+    },
+    {
+      "id": 2,
+      "facilityType": "House",
+      "name": "Phòng Superior Hướng Hồ",
+      "area": 40.1,
+      "cost": "8001",
+      "maxPeople": 7,
+      "rentType": "Month",
+      "standardRoom": "Normal",
+      "descriptionOtherConvenience": "No",
+      "poolArea": 1,
+      "numberFloor": 1,
+      "facilityFree": "No",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"
+    },
+    {
+      "id": 3,
+      "facilityType": "Room",
+      "name": "Phòng Superior Hướng Hồ",
+      "area": 40.1,
+      "cost": 800,
+      "maxPeople": "71",
+      "rentType": "Month",
+      "standardRoom": "Normal",
+      "descriptionOtherConvenience": "No",
+      "poolArea": 11,
+      "numberFloor": 11,
+      "facilityFree": "No",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-F-370x239.jpg"
+    },
+    {
+      "id": 4,
+      "facilityType": "Villa",
+      "name": "Biệt Thự Hướng Vườn Có Hồ Bơi",
+      "area": 300,
+      "cost": 1200,
+      "maxPeople": 7,
+      "rentType": "Month",
+      "standardRoom": "Normal",
+      "descriptionOtherConvenience": "Có Hồ Bơi",
+      "poolArea": null,
+      "numberFloor": 2,
+      "facilityFree": "",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Pool_Villas-F-370x239.jpg"
+    },
+    {
+      "id": 5,
+      "facilityType": "Villa",
+      "name": "Biệt Thự Hướng Biển Có Hồ Bơi",
+      "area": 900,
+      "cost": 1500,
+      "maxPeople": 7,
+      "rentType": "Month",
+      "standardRoom": "Normal",
+      "descriptionOtherConvenience": "Có Hồ Bơi",
+      "poolArea": null,
+      "numberFloor": 2,
+      "facilityFree": "",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas-_Exterior-1-F-370x239.jpg"
+    },
+    {
+      "id": 6,
+      "facilityType": "Villa",
+      "name": "Phòng Suite Hướng Biển",
+      "area": 40.1,
+      "cost": 800,
+      "maxPeople": 7,
+      "rentType": "Month",
+      "standardRoom": "Normal",
+      "descriptionOtherConvenience": "Có Hồ Bơi",
+      "poolArea": null,
+      "numberFloor": 2,
+      "facilityFree": "",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg"
+    },
+    {
+      "id": 8,
+      "facilityType": "Villa",
+      "name": "Namename",
+      "area": "111",
+      "cost": "11",
+      "maxPeople": "11",
+      "rentType": "Month",
+      "standardRoom": "Normal",
+      "descriptionOtherConvenience": "No",
+      "poolArea": "11",
+      "numberFloor": "10",
+      "facilityFree": "No",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"
+    }
+  ],
+  "contract": [
+    {
+      "id": 1,
+      "customer": {
+        "name": "Nguyễn Văn A"
+      },
+      "facility": {
+        "name": "Phòng Suite Hướng Biển"
+      },
+      "startDate": "10/10/2019",
+      "endDate": "11/18/2019",
+      "deposit": 1500
+    },
+    {
+      "id": 2,
+      "customer": {
+        "name": "Trần Thị Bình"
+      },
+      "facility": {
+        "name": "Biệt Thự Hướng Biển Có Hồ Bơi"
+      },
+      "startDate": "10/11/2021",
+      "endDate": "11/11/2021",
+      "deposit": 2000
+    },
+    {
+      "id": 3,
+      "customer": {
+        "name": "Trần Thị Bình"
+      },
+      "facility": {
+        "name": "Phòng Suite Hướng Biển"
+      },
+      "startDate": "2022-08-10",
+      "endDate": "2022-08-18",
+      "deposit": "15"
+    },
+    {
+      "id": 4,
+      "customer": {
+        "name": "Ngọc C"
+      },
+      "facility": {
+        "name": "Phòng Suite Hướng Biển"
+      },
+      "startDate": "2022-08-03",
+      "endDate": "2022-08-11",
+      "deposit": "111111"
+    },
+    {
+      "id": 5,
+      "customer": {
+        "name": "Name B C"
+      },
+      "facility": {
+        "name": "Phòng Superior Hướng Hồ"
+      },
+      "startDate": "2022-08-01",
+      "endDate": "2022-08-03",
+      "deposit": "1111111"
+    },
+    {
+      "id": 6,
+      "customer": {
+        "name": "Ngọc C"
+      },
+      "facility": {
+        "name": "Phòng Superior Hướng Hồ"
+      },
+      "startDate": "2022-02-09",
+      "endDate": "2022-08-10",
+      "deposit": "11111111"
+    },
+    {
+      "id": 7,
+      "customer": {
+        "name": "Ngọc C"
+      },
+      "facility": {
+        "name": "Phòng Suite Hướng Biển"
+      },
+      "startDate": "2022-08-17",
+      "endDate": "2022-08-18",
+      "deposit": "11"
+    }
+  ]
+}
